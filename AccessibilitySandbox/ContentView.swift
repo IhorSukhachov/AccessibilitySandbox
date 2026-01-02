@@ -34,17 +34,24 @@ struct ContentView: View {
 //            .accessibilityLabel(labels[selectedPicture])
 //            .accessibilityAddTraits(.isButton)
 //            .accessibilityRemoveTraits(.isImage)
-        Button {
-            selectedPicture = Int.random(in: 0...3)
-        } label: {
-            Image(pictures[selectedPicture])
-                .resizable()
-                .scaledToFit()
-               
-        } .accessibilityLabel(labels[selectedPicture])
-        
-        Image("character")
-            .accessibilityHidden(true)
+//        Button {
+//            selectedPicture = Int.random(in: 0...3)
+//        } label: {
+//            Image(pictures[selectedPicture])
+//                .resizable()
+//                .scaledToFit()
+//               
+//        } .accessibilityLabel(labels[selectedPicture])
+//        
+//        Image("character")
+//            .accessibilityHidden(true)
+        VStack {
+            Text("some text")
+            
+            Text("some other text")
+                .font(Font.largeTitle.bold())
+        }
+        .accessibilityElement(children: .combine)
     }
 }
 
