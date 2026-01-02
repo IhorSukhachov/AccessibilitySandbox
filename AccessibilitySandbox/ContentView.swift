@@ -51,7 +51,8 @@ struct ContentView: View {
             Text("some other text")
                 .font(Font.largeTitle.bold())
         }
-        .accessibilityElement(children: .combine)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("some text some other text")
     }
 }
 
