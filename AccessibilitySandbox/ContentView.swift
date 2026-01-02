@@ -43,7 +43,8 @@ struct ContentView: View {
                
         } .accessibilityLabel(labels[selectedPicture])
         
-        Image(decorative: "character")
+        Image("character")
+            .accessibilityHidden(true)
     }
 }
 
