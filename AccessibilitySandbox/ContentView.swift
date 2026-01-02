@@ -31,6 +31,7 @@ struct ContentView: View {
             .onTapGesture {
                 selectedPicture = Int.random(in: 0...3)
             }
+            .accessibilityLabel(labels[selectedPicture])
     }
 }
 
