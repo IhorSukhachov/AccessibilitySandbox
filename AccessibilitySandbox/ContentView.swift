@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    let pictures = [
+        "ales-krivec-15949",
+        "galina-n-189483",
+        "kevin-horstmann-141705",
+        "nicolas-tissot-335096"
+    ]
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
