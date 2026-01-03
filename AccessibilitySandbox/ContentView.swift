@@ -79,7 +79,10 @@ struct ContentView: View {
             }
           
         }
-        
+        Button("John Fitzerald Kennedy") {
+            print("Button tapped")
+        }
+        .accessibilityInputLabels(["John Fitzerald Kennedy", "J.F.K.", "Kennedy"])
     }
 }
 
